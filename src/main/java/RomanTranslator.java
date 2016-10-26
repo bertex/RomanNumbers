@@ -3,7 +3,7 @@ import java.util.List;
 public class RomanTranslator {
 
     private List<ArabicRoman> arabicRoman;
-    private int lastPositionUsed = 0;
+    private int lastPositionUsed;
 
     public RomanTranslator(List<ArabicRoman> arabicRoman) {
         this.arabicRoman = arabicRoman;
@@ -19,5 +19,13 @@ public class RomanTranslator {
         }
         return "";
     }
+
+    /*
+    public String numberToRoman(Integer i) {
+        for (ArabicRoman conversion : arabicRoman) {
+            if (i >= conversion.getArabicValue()) return conversion.getRomanValue() + numberToRoman(i - conversion.getArabicValue());
+        } return "";
+    }
+    */
 
 }
