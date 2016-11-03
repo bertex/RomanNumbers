@@ -2,9 +2,9 @@
 public class RomanTranslator {
 
 
-    public int numberToRoman(int i) {
-
-    return 0;
+    public String numberToRoman(int i) {
+    String result ="";
+    return result;
     }
 
 
